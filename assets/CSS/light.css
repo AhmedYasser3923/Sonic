@@ -1,0 +1,200 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav .container{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+nav .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0px;
+    align-items: center;
+}
+nav .row .nav-links{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+nav .row .nav-links ul{
+display: flex;
+list-style-type: none;
+justify-content: center !important;
+margin: auto;
+padding-left: 0;
+padding-bottom: 0;
+}
+nav .row .nav-links ul li{
+    padding: 10px;
+    margin-right: 5px;
+    position: relative;
+}
+nav .row .nav-links ul li a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+nav .row .nav-links ul li a:hover{
+    cursor: pointer;
+    color:aqua;
+}
+nav .row .nav-links ul li::before{
+    content:"";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    color: aqua;
+    background-color: aquamarine;
+    margin-left: 25px;
+}
+nav .row .nav-links ul li:hover:before{
+    width: 20%;
+    height: 3px;
+    cursor: pointer;
+}
+nav .row .nav-links form{
+    display: block;
+}
+nav .row .nav-links form a{
+    text-decoration: none;
+}
+nav .row .nav-links form a .btn{
+    color: black;
+    cursor: pointer;
+    background-color:white;
+    border-radius: 25px;
+    padding: 10px;
+    border: 0px;
+    font-size: 15px;
+}
+nav .row .nav-links form a .btn1{
+    color: aliceblue;
+    cursor: pointer;
+    background-color: cyan;
+    border-radius: 25px;
+    padding: 10px;
+    border: 0px;
+    font-size: 15px;
+}
+nav .container::after{
+    content: '';
+    position: absolute;
+    bottom: 1%;
+    width: 99%;
+    right: 1%;
+    border-bottom: solid gray;
+    opacity: 0.4000000059604645;
+}
+nav .row .logo a{
+    text-decoration: none;
+}
+nav .row .logo a h2{
+color: black;
+cursor: pointer;
+font-size: 35px;
+transition: 0.25s all;
+}
+nav .row .logo a h2:hover{
+color: darkslategray;
+}
+nav .row .logo a h2 span{
+    color: aqua;
+    cursor: none;
+}
+main #Home .container{
+    width: 80%;
+    margin: auto;
+}
+main #Home .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+main #Home .container .row .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    width: 33.3%;
+}
+main #Home .container .row .left .header-1{
+    color:black;
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+main #Home .container .row .left .header-1 .span-NFTS{
+    color: aqua;
+}
+main #Home .container .row .left .p1{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+main #Home .container .row .left div{
+    margin-bottom: 30px;
+}
+main #Home .container .row .left .btn2{
+    background-color: aqua;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    width: 207px;
+    height: 60px;
+    font-size: 17px;
+    font-family:  sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+main #Home .container .row .right{
+    background-image: url(../hero_image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 540px;
+}
+.theme-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background-color: black;
+    cursor: pointer;
+}
+.theme-container i{
+    font-size: 25px;
+    color: white;
+}
+
+nav .row .bars{
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    color: gray;
+}

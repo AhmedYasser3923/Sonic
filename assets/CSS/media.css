@@ -1,0 +1,32 @@
+@media (max-width: 772px) {
+    header{
+        background-color: #111;
+    }
+    nav .row .logo a h2{
+        color: aliceblue;
+    }
+    nav .row .nav-links{
+        display: none;
+    } 
+    nav .row .bars{
+        display: block;
+    }
+    main #Home .container{
+        max-width: 720px;
+    }
+    .theme-container{
+        bottom: 60px;
+        right: 60px;
+    }
+    main #Home .container .row .left{
+        width: 45%;
+    }
+}
+@media (max-width: 576px) {
+    main #Home .container{
+        max-width: 540px;
+    }
+    main #Home .container .row .left{
+        width: 70%;
+    }
+}
